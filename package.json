@@ -1,0 +1,20 @@
+{
+  "name": "@mm/el-load-select",
+  "version": "1.0.1",
+  "description": "el-load-select 基于element-ui 二次封装的select组件",
+  "author": "blank1024",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "rollup": "^2.48.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-vue": "5.1.9",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
