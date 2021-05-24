@@ -2,6 +2,8 @@
 
 基于element-ui 二次封装的select组件
 
+[中文文档](https://marihom.github.io/el-load-select/)
+
 ## 安装
 
 ```
@@ -34,7 +36,7 @@ Vue.use(loadSelect)
 
 ## 待完善
 
-- [ ] 将具体的使用教程用一个vuepress来代替
+- [ x ] 将具体的使用教程用一个vuepress来代替
 
 ## 注意事项
 
