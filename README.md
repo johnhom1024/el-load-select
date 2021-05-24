@@ -1,6 +1,6 @@
 # el-load-select
 
-基于element-ui 二次封装的select组件
+基于element-ui二次封装的select组件
 
 [中文文档](https://marihom.github.io/el-load-select/)
 
