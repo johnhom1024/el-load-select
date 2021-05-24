@@ -36,7 +36,7 @@ Vue.use(loadSelect)
 
 ## 待完善
 
-- [ x ] 将具体的使用教程用一个vuepress来代替
+- [x] 将具体的使用教程用一个vuepress来代替
 
 ## 注意事项
 
