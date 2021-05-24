@@ -9,12 +9,15 @@
     "lib"
   ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "devDependencies": {
     "rollup": "^2.48.0",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-vue": "5.1.9",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.12",
+    "vuepress": "^1.8.2"
   }
 }
