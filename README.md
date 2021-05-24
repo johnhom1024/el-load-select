@@ -30,7 +30,7 @@ Vue.use(loadSelect)
 </template>
 ```
 
-load-select具体的使用教程可以参考我的另一个仓库[vue-load-select](https://github.com/marihom/vue-load-select◊)
+`load-select`组件的具体使用教程可以参考我的另一个仓库[vue-load-select](https://github.com/marihom/vue-load-select◊)
 
 ## 待完善
 
