@@ -14,7 +14,7 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "rollup": "^2.48.0",
+    "rollup": "^2.60.2",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-vue": "5.1.9",
     "vue-template-compiler": "^2.6.12",
