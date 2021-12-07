@@ -1,13 +1,12 @@
-import vuePlugin from "rollup-plugin-vue";
-import postcss from "rollup-plugin-postcss";
+import vue from "rollup-plugin-vue";
 
 export default {
   input: "src/index.js",
   output: {
     file: "lib/index.js",
-    format: "umd",
+    format: "esm",
     name: "LoadSelect",
   },
-  plugins: [postcss(), vuePlugin()],
+  plugins: [vue()],
   external: ["vue"],
 };
