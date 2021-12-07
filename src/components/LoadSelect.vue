@@ -94,7 +94,6 @@ export default {
     handleSearch(keyword) {
       this.keyword = keyword;
       this.loading = true;
-      console.log(keyword);
       this.request({ page: 1, keyword: keyword }).then(() => {
         this.loading = false;
       });
