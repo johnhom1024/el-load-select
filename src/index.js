@@ -1,22 +1,17 @@
-import LoadSelect from "./components/LoadSelect.vue";
-import loadMore from './directive/loadmore.js';
+import LoadSelect from './components/LoadSelect.vue';
+import LoadMoreDirective from './directive/loadmore.js';
 
-const install = function (Vue) {
-  if (install.installed) return;
-  if (!Vue.prototype.$ELEMENT) {
-    throw new Error("请先安装element-ui");
+const Plugin = {
+  install(Vue) {
+    if (Plugin.installed) return;
+    // 检测是否安装了element-ui
+    if (!Vue.prototype.$ELEMENT) {
+      throw new Error("请先安装element-ui");
+    }
+    Vue.component(LoadSelect.name, LoadSelect);
+    Vue.directive('loadmore', LoadMoreDirective)
+    Plugin.installed = true
   }
-  Vue.component(LoadSelect.name, LoadSelect);
-  Vue.directive('loadmore', loadMore)
-  install.installed = true
-};
-
-if (window && window.Vue) {
-  install(window.Vue)
 }
 
-export default {
-  install,
-  LoadSelect,
-  loadMore
-}
+export default Plugin

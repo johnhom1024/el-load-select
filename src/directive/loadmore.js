@@ -15,17 +15,13 @@ const loadmore = {
     const SELECTWRAP = el.querySelector(
       ".el-select-dropdown .el-select-dropdown__wrap"
     );
-    SELECTWRAP.addEventListener("scroll", function() {
-      loadMoreFn.call(this, el, binding);
-    });
+    SELECTWRAP.addEventListener("scroll", loadMoreFn.bind(this, el, binding));
   },
   unbind(el, binding) {
     const SELECTWRAP = el.querySelector(
       ".el-select-dropdown .el-select-dropdown__wrap"
     );
-    SELECTWRAP.removeEventListener("scroll", function() {
-      loadMoreFn.call(this, el, binding);
-    });
+    SELECTWRAP.removeEventListener("scroll", loadMoreFn.bind(this, el, binding));
   }
 };
 
