@@ -1,4 +1,5 @@
 function loadMoreFn(el, binding) {
+  // 这里的this 指向 SELECTWRAP
   // this.scrollTop  这里可能因为浏览器缩放存在小数点的情况，导致了滚动到底部时
   // scrollHeight 减去滚动到底部时的scrollTop ，依然大于clientHeight 导致无法请求更多数据
   // 这里将scrollTop向上取整 保证滚到底部时，触发调用
@@ -15,14 +16,8 @@ const loadmore = {
     const SELECTWRAP = el.querySelector(
       ".el-select-dropdown .el-select-dropdown__wrap"
     );
-    SELECTWRAP.addEventListener("scroll", loadMoreFn.bind(this, el, binding));
+    SELECTWRAP.addEventListener("scroll", loadMoreFn.bind(SELECTWRAP, el, binding));
   },
-  unbind(el, binding) {
-    const SELECTWRAP = el.querySelector(
-      ".el-select-dropdown .el-select-dropdown__wrap"
-    );
-    SELECTWRAP.removeEventListener("scroll", loadMoreFn.bind(this, el, binding));
-  }
 };
 
 export default loadmore;
