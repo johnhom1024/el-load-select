@@ -1,6 +1,6 @@
 {
   "name": "@marihom/el-load-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "el-load-select 基于element-ui 二次封装的select组件",
   "author": "marihom",
   "main": "lib/index.js",
