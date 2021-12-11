@@ -7,9 +7,9 @@
 ## 安装
 
 ```
-npm install @marihom/el-load-select
+npm install @johnhom/el-load-select
 
-# 或者 yarn add @marihom/el-load-select
+# 或者 yarn add @johnhom/el-load-select
 ```
 
 ## 使用教程
@@ -19,7 +19,7 @@ npm install @marihom/el-load-select
 ```javascript
 import Vue from 'vue'
 
-import loadSelect from '@marihom/el-load-select'
+import loadSelect from '@johnhom/el-load-select'
 
 Vue.use(loadSelect)
 ```
